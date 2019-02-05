@@ -12,5 +12,3 @@ def fizz_buzz(num):
         return 'Fizz'
 
     return num
-
-print fizz_buzz(-6)

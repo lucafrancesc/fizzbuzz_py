@@ -2,6 +2,7 @@ import unittest
 from fizzbuzz import fizz_buzz
 
 class TestFizzBuzz(unittest.TestCase):
+    
     def number_if_not_divisible_by_3_5_15(self):
         self.assertEqual(fizz_buzz(-1), -1)
         self.assertEqual(fizz_buzz(0), 0)
@@ -19,9 +20,10 @@ class TestFizzBuzz(unittest.TestCase):
         self.assertEqual(fizz_buzz(-5), 'Buzz')
         self.assertEqual(fizz_buzz(10), 'Buzz')
 
+
     def test_3_is_fizz(self):
         self.assertEqual(fizz_buzz(3), 'Fizz')
         self.assertEqual(fizz_buzz(6), 'Fizz')
         self.assertEqual(fizz_buzz(-6), 'Fizz')
 
-    unittest.main()
+unittest.main()
